@@ -34,7 +34,7 @@ Tested with Pi 1.6.0.
 - **Running call.** While a call runs, the line is in the present tense and names the call. Failed calls are counted at the end.
 - **Single calls.** A call alone in its stack shows its own first line, such as `$ npm test`.
 - **Expand.** The expand key (Ctrl+O by default) shows every call and its output in full, and collapses back to the stack. The hint follows your keybinding and is left out in narrow terminals.
-- **History.** Resumed sessions, `/reload`, compaction and `/tree` moves are stacked the same way as live runs.
+- **History.** Resumed sessions and `/reload` are stacked the same way as live runs. After a compaction or a `/tree` move the stacks are rebuilt from the session; that path is covered by the unit tests but has not been tried in a real session yet.
 
 ## What else changes
 
