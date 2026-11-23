@@ -1,0 +1,37 @@
+{
+  "name": "pi-stacked-tools",
+  "version": "0.1.0",
+  "description": "Pi extension that draws a run of consecutive tool calls as one line, such as \"Ran 3 bash commands, read 2 files\".",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mai961/pi-stacked-tools.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "extension",
+    "tui"
+  ],
+  "files": [
+    "index.ts",
+    "stacks.ts",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test.ts"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
